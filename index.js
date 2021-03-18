@@ -55,21 +55,15 @@ const generateMarkdown = require("./generateMarkdown.js")
 ])
 .then(function(data) {
     console.log("data:", data);
-    const stringifyData=JSON.stringify(data, null, 2);
-    fs.writeFile("READMEE.md", generateMarkdown(stringifyData), () =>
-    console.log("Wrote to File")
-    );
-    
+    // (data,null,2) is saying to stringify the entire object
+    // const stringifyData=JSON.stringify(data,null,2);
+    fs.writeFile("READMEX.md", generateMarkdown(data),(err)=>{
+        if (err) throw err;
+        console.log("sent to new file")
+    });
 });
-//  EVERYTHING FROM ABOVE IS UNDEFINED ON MARKUP
 
-//      function generateMarkdown(data){
-//     var objData = JSON.parse(data);
-//      console.log("objData:", objData);
-//     return objData
-//   }
 
-//  IF I INCLUDE THE ABOVE FUNCTION IT BREAKS IF NOT RETURNED
 
 // // TODO: Create a function to write README file
 //  function writeToFile(fileName, data) {}

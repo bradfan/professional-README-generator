@@ -29,6 +29,7 @@ console.log("Hello generate.js");
   
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  //possibly parse ther data
   return `# ${data.title}
 
 # Title
@@ -47,7 +48,7 @@ ${data.dependencies}
 ## Testing
 ${data.tests}
 ## Questions
-"If you have any questions, contact " + ${data.name} + "at " + ${data.email}
+If you have any questions, contact  + ${data.name} + at  + ${data.email}
 ## Usage
 ${data.usage}
 
