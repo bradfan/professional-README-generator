@@ -1,4 +1,3 @@
-console.log("Hello");
 // TODO: Include packages needed for this application
 // NPM Module || NPM Package
 const inquirer = require("inquirer");
@@ -57,7 +56,7 @@ const generateMarkdown = require("./generateMarkdown.js")
     console.log("data:", data);
     // (data,null,2) is saying to stringify the entire object
     // const stringifyData=JSON.stringify(data,null,2);
-    fs.writeFile("READMEX.md", generateMarkdown(data),(err)=>{
+    fs.writeFile("README4.md", generateMarkdown(data),(err)=>{
         if (err) throw err;
         console.log("sent to new file")
     });
@@ -65,11 +64,11 @@ const generateMarkdown = require("./generateMarkdown.js")
 
 
 
-// // TODO: Create a function to write README file
-//  function writeToFile(fileName, data) {}
+
 
 // // TODO: Create a function to initialize app
-// function init() {}
+// function init() {
 
-// // Function call to initialize app
+// }
+
 // init();

@@ -1,5 +1,3 @@
-console.log("Hello generate.js");
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
   function getBadge(license) {
@@ -20,39 +18,40 @@ console.log("Hello generate.js");
      return `## License ${license}`
     }else return " ";
  }
- function tableContentLicense(license){
-  if (license !== "None"){
-    return `## license (##license)`
-   }else return " ";
-}
+//  function tableContentLicense(license){
+//   if (license !== "None"){
+//     return `## license (##license)`
+//    }else return " ";
+// }
  
   
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   //possibly parse ther data
-  return `# ${data.title}
+  return `# ${data.project}
 
-# Title
-${data.title}
-## License
-${data.license}
-${renderLicenseBadge(data.license)}
-${getBadge(data.license)};
+## License:
+### ${data.license}
+## ${getBadge(data.license)};
 ## Table of Contents
-${tableContentLicense(data.license)}
-[]
-## Description
-${data.description}
-## Dependencies
-${data.dependencies}
-## Testing
-${data.tests}
-## Questions
-If you have any questions, contact  + ${data.name} + at  + ${data.email}
-## Usage
-${data.usage}
-
-## Contributing
+*  [License](#license)  
+*  [Description](#description)  
+*  [Dependencies](#dependencies)
+*  [Testing](#tests)
+*  [Questions](#name,#email)
+*  [Usage instructions](#user)
+## Description:
+### ${data.description}
+## Dependencies:
+### ${data.dependencies}
+## Testing:
+### ${data.tests}
+## Questions:
+### If you have any questions, contact ${data.name} at ${data.email}
+## Usage instructions:
+### ${data.user}
+## Contributing:
+### Find out how you can contribute by contacting ${data.name} at ${data.email}
 
 `;
 }
