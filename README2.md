@@ -1,1 +1,0 @@
-bradfanis using MIT
