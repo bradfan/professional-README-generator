@@ -50,25 +50,13 @@ const generateMarkdown = require("./generateMarkdown.js")
         message: "What should the user need to know about using the repo?",
     }
     
-
 ])
 .then(function(data) {
     console.log("data:", data);
-    // (data,null,2) is saying to stringify the entire object
-    // const stringifyData=JSON.stringify(data,null,2);
-    fs.writeFile("README4.md", generateMarkdown(data),(err)=>{
+    fs.writeFile("genREADME.md", generateMarkdown(data),(err)=>{
         if (err) throw err;
-        console.log("sent to new file")
+        console.log("sent to generateMarkdown.js")
     });
 });
 
 
-
-
-
-// // TODO: Create a function to initialize app
-// function init() {
-
-// }
-
-// init();
