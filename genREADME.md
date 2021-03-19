@@ -1,8 +1,8 @@
-# Pro README Generator
+# Professional README Generator
 
 ## License:
-### MIT
-## <img src="https://img.shields.io/badge/License-MIT-yellow.svg"></img>
+### Apache 2.0
+## <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></img>
 ## Table of Contents
 *  [License](#license)  
 *  [Description](#description)  
@@ -12,7 +12,7 @@
 *  [Usage](#usage) 
 *  [Contributing](#contributing) 
 ## Description:
-### It is so cool!
+### It is very useful for starting a new project!!
 ## Dependencies:
 ### npm i
 ## Testing:
@@ -21,7 +21,7 @@
 ### If you have any questions, contact
 [bradfan](https://github.com/bradfan) at brt.jst@gmail.com
 ## Usage:
-### It rules
+### This is great work and deserves the highest grade!
 ## Contributing:
 ### Find out how you can contribute by contacting [bradfan](https://github.com/bradfan) at brt.jst@gmail.com
 
