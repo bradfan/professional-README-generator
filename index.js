@@ -52,7 +52,6 @@ const generateMarkdown = require("./generateMarkdown.js")
     
 ])
 .then(function(data) {
-    console.log("data:", data);
     fs.writeFile("genREADME.md", generateMarkdown(data),(err)=>{
         if (err) throw err;
         console.log("sent to generateMarkdown.js")
